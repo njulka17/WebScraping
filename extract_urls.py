@@ -3,6 +3,8 @@ from urllib.parse import urljoin, urlparse
 import requests
 from bs4 import BeautifulSoup
 
+ALL_URLS = []
+
 
 # Function to extract the base URL
 def get_base_url(url):
@@ -26,19 +28,24 @@ def find_urls(url, base_url, visited):
         for link in soup.find_all('a', href=True):
             href = link.get('href')
             full_url = urljoin(base_url, href)
-            if full_url.startswith(base_url) and full_url not in visited:
-                print(full_url)
-                find_urls(full_url, base_url, visited)
+            # if full_url.startswith(base_url) and full_url not in visited:
+            if full_url not in ALL_URLS:
+                ALL_URLS.append(full_url)
+            lu = len(ALL_URLS)
+            if lu % 10 == 0:
+                print(lu)
+            find_urls(full_url, base_url, visited)
     except requests.RequestException as e:
-        print(f"Failed to request {url}: {e}")
+        pass
 
 
 def main(root_url):
     base_url = get_base_url(root_url)
     visited = set()
-    find_urls(root_url, base_url, visited)
+    return find_urls(root_url, base_url, visited)
 
 
-if __name__ == "__main__":
-    root_url = 'https://results.eci.gov.in'
-    main(root_url)
+root_url = 'https://results.eci.gov.in'
+print("Collecting URLs...")
+main(root_url)
+print("Done.", len(ALL_URLS), 'URLs found.')

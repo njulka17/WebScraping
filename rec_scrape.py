@@ -102,7 +102,7 @@ key_insights = generate_insights(all_data_frames)
 
 # Save the report
 report = '\n'.join(key_insights)
-with open('election_report.txt', 'w') as file:
+with open('rec_scrape_report.txt', 'w') as file:
     file.write(report)
 
 print("Report generated and saved as 'election_report.txt'")

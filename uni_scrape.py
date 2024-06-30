@@ -66,7 +66,7 @@ insights.append(f"Top 5 parties by total seats (Won + Leading):\n\t" +
 
 # Save the report
 report = '\n'.join(insights)
-with open('election_report.txt', 'w') as file:
+with open('uni_scrape_report.txt', 'w') as file:
     file.write(report)
 
 print("Report generated and saved as 'election_report.txt'")
