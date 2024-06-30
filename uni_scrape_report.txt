@@ -1,0 +1,15 @@
+Total number of parties: 42
+Total seats won: 543
+Party leading in most constituencies: Bharatiya Janata Party - BJP with 0 leads
+Party with highest total seats (Won + Leading): Bharatiya Janata Party - BJP with 240 seats
+Average number of seats won per party: 12.93
+Party with most seats won: Bharatiya Janata Party - BJP with 240 seats
+Parties with no seats won: 
+Total number of leading seats: 0
+Party with least total seats (Won + Leading): United People’s Party, Liberal - UPPL with 1 seats
+Top 5 parties by total seats (Won + Leading):
+	Bharatiya Janata Party - BJP (240)
+	Indian National Congress - INC (99)
+	Samajwadi Party - SP (37)
+	All India Trinamool Congress - AITC (29)
+	Dravida Munnetra Kazhagam - DMK (22)
