@@ -1,0 +1,20 @@
+DataFrame columns: Party, Won, Leading, Total
+Total rows: 42
+Most common value in Party: AJSU Party - AJSUP
+Most common value in Won: 1
+Most common value in Leading: 0
+Most common value in Total: 1
+Number of unique values in columns: {'Party': 42, 'Won': 15, 'Leading': 1, 'Total': 15}
+Summary statistics:
+                               Party Won Leading Total
+count                             42  42      42    42
+unique                            42  15       1    15
+top     Bharatiya Janata Party - BJP   1       0     1
+freq                               1  17      42    17
+First few rows:
+                                 Party  Won Leading Total
+0         Bharatiya Janata Party - BJP  240       0   240
+1       Indian National Congress - INC   99       0    99
+2                 Samajwadi Party - SP   37       0    37
+3  All India Trinamool Congress - AITC   29       0    29
+4      Dravida Munnetra Kazhagam - DMK   22       0    22
